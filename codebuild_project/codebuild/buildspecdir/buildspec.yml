@@ -1,0 +1,20 @@
+version: 0.2
+env:
+  variables:
+    MAJOR: "1"
+    MINOR: "1"
+phases:
+  install:
+    commands:
+
+  pre_build:
+    commands:
+      - echo "pre_build step"
+      - echo "Running - $BUILDVERSION"
+  build:
+    commands:
+      - echo "build command"
+      - echo "$yo"
+  post_build:
+    commands:
+      - echo "post_build step"
